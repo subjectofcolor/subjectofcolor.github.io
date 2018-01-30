@@ -1,0 +1,124 @@
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+html,body{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.wrapper{
+  display: grid;
+  height: 100vh;
+  grid-template-rows:  1fr auto;
+}
+#content{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+#leftSide{
+  display: grid;
+  justify-items: center;
+  align-items: start;
+}
+#logo{
+  margin: 1rem 0 3rem 0;
+  align-self: end;
+}
+
+#playGame{
+  color:#f04f50;
+  font-size: 0.75rem;
+  text-align: center;
+  display: grid;
+  grid-gap: 0.5rem;
+  justify-items: center;
+}
+button{
+  color:#f04f50;
+  font-size: 2rem;
+  background: none;
+  border: 2px solid #f04f50;
+  padding: 1rem 3rem 1rem 3rem;
+}
+button span{
+  font-size: 1rem;
+  display: block;
+}
+a{
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+
+}
+button:hover{
+  background-color: #f04f50;
+  color:white;
+  cursor: pointer;
+}
+#description{
+  text-align: center;
+  width: 50%;
+  line-height: 1.5rem;
+  color:white;
+  background:#f04f50;
+  padding: 1rem 2rem 1rem 2rem;
+  margin:1rem 0 1rem 0;
+}
+#description >p{
+  margin: 1rem;
+}
+#bg{
+  background: white url('../assets/bg.jpg');
+  background-size: cover;
+}
+#footer{
+  text-align: right;
+  padding:1rem;
+  color:white;
+}
+#footer{
+  background-color: #f04f50;
+}
+@media  (max-width: 1000px) {
+  #bg{
+    display: none;
+  }
+  #content{
+    display: block;
+  }
+  #logo{
+    margin-top:2rem;
+    width: 50%;
+  }
+  #description{
+   margin-top: 3rem;
+   padding: 1rem 2rem 1rem 2rem;
+   width: 70%;
+  }
+  #description >p{
+    margin: 0.5rem;
+  }
+  #footer{
+    text-align: center;
+    font-size: 0.75rem;
+    padding:1rem;
+    color:white;
+  }
+}
+@media (orientation : landscape) and (max-width:1000px){
+
+  #leftSide{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    #description{
+     margin-top: 1rem;
+     padding: 0.5rem 2rem 0.5rem 2rem;
+     width: 100%;
+    }
+    #logo
+    {
+      width: 20%;
+    }
+}
