@@ -1,0 +1,24 @@
+{
+  "name": "subjectofcolor.github.io",
+  "version": "1.0.0",
+  "description": "Subject of Color Webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subjectofcolor/subjectofcolor.github.io.git"
+  },
+  "author": "Peer Dreager & Steffen Reichelt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subjectofcolor/subjectofcolor.github.io/issues"
+  },
+  "homepage": "https://github.com/subjectofcolor/subjectofcolor.github.io#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.5.1"
+  }
+}
